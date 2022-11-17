@@ -2,7 +2,7 @@
 
 #ConfigArgParse == 1.2.3
 ConfigArgParse
-djitellopy == 1.5
+#djitellopy == 1.5
 #numpy == 1.19.3
 numpy
 #opencv_python == 4.5.1.48
