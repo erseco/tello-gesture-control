@@ -125,12 +125,15 @@ def main():
             KEYBOARD_CONTROL = True
             WRITE_CONTROL = False
             tello.send_rc_control(0, 0, 0, 0)  # Stop moving
+            print("KEYBOARD_CONTROL ON")
         elif key == ord('g'):
             KEYBOARD_CONTROL = False
+            print("GESTURE_CONTROL ON")
         elif key == ord('n'):
             mode = 1
             WRITE_CONTROL = True
             KEYBOARD_CONTROL = True
+            print("KEYBOARD+GESTURE_CONTROL ON")
 
         if WRITE_CONTROL:
             number = -1
