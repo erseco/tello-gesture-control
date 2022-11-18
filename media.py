@@ -91,6 +91,14 @@ while capture.isOpened():
     # Enter key 'q' to break the loop
     if cv2.waitKey(5) & 0xFF == ord('q'):
         break
+
+    try:
+        key = cv2.waitKey(1) & 0xff
+        if key != 255:
+            print(key)
+    except Exception as e:
+        print("Error reading key")
+
  
 # When all the process is done
 # Release the capture and destroy all windows
